@@ -633,51 +633,7 @@ footer a{
         
     
 }
-@media(max-width:477px)
-{
-    #header {
-       width: 200%;
-    }
-    #hero {
-        height: 70vh;
-        background-position: 55%;
-        padding: 0 80px;
-        width: 200%;
-    }
-    #feature {
-        justify-content: center;
-        padding-left: 100%;
-    }
-    #product1 {
-       font-size: small;
-        padding-left: 80%;
-    }
-    h2 {
-        font-size: 50px;
-        line-height: 1;
-        color: #222;
-        
-    }
-    p {
-        font-size: 20px;
-        color: #465b52;
-        margin: 15px 0 20px 0;
-    }
 
-    #banner {
-        height: 20vh;
-        width: 200%;
-    }
-    #banner2 .sale2 {
-       
-        width:100px;
-    }
-    #news {
-       width: 200%;
-    }
-    
-
-}
 #page-header{
     background-image: url(logo/b1.jpg);
     width: 100%;height: 40vh;
@@ -1005,3 +961,315 @@ h1 {
     padding: 10px;
     font-size: 13px;
 }
+@media (max-width: 480px) {
+    #header {
+        padding: 10px; /* Adjust padding for smaller screens */
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+        width: 100%; /* Full width */
+    }
+
+    .logo {
+        width: 80px; /* Adjust logo size */
+        margin: 0.5rem 0; /* Adjust margin */
+    }
+
+    #navbar {
+        display: none; /* Hide navbar by default */
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width */
+        background-color: #e3e6f3; /* Background for the mobile navbar */
+        position: absolute; /* Position to overlap content */
+        top: 60px; /* Adjust according to header height */
+        left: 0; /* Align to left */
+        z-index: 1000; /* Ensure it's on top */
+    }
+
+    #navbar.active {
+        display: flex; /* Show navbar when active */
+    }
+
+    #mobile {
+        display: flex; /* Show mobile menu icon */
+        justify-content: space-between;
+        width: 100%; /* Full width */
+        padding: 10px 0; /* Adjust padding */
+    }
+
+    #mobile a {
+        font-size: 24px; /* Increase icon size for better touch */
+    }
+
+    #navbar li {
+        padding: 10px 0; /* Increase padding for touch targets */
+        text-align: center; /* Center text */
+    }
+
+    #navbar li a {
+        font-size: 18px; /* Adjust font size */
+        padding: 10px; /* Add padding for better touch */
+    }
+
+    #close {
+        display: block; /* Show close button */
+        font-size: 24px; /* Adjust size */
+        margin-left: auto; /* Align close button to the right */
+    }
+#hero {
+    padding: 0 20px; /* Adjust padding for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+    justify-content: center; /* Center content vertically */
+}
+
+#hero h4 {
+    font-size: 16px; /* Adjust font size */
+    padding-bottom: 10px; /* Adjust spacing */
+}
+
+#hero h2 {
+    font-size: 24px; /* Adjust font size */
+    margin: 10px 0; /* Add margin */
+}
+
+#hero h1 {
+    font-size: 32px; /* Adjust font size */
+    color: green; /* Retain color */
+}
+
+#hero p {
+    font-size: 14px; /* Adjust font size */
+    margin: 10px 0; /* Add margin */
+}
+
+#hero button {
+    padding: 10px 40px; /* Adjust padding */
+    font-size: 14px; /* Adjust font size */
+    }
+#feature {
+    flex-direction: row; /* Keep items in a row */
+    justify-content: center; /* Center items */
+}
+
+.box {
+    width: 45%; /* Two boxes per row */
+    margin: 10px; /* Margin for spacing */
+}
+
+.box img {
+    width: 80px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.box h6 {
+    font-size: 14px; /* Adjust font size */
+    padding: 8px 10px; /* Adjust padding */
+    }
+#product1 {
+    padding-top: 1rem; /* Adjust padding */
+}
+
+.pro-container {
+    flex-direction: column; /* Stack products vertically */
+    align-items: center; /* Center items */
+    padding: 20px; /* Adjust padding */
+}
+
+.product-card {
+    width: 90%; /* Adjust width for smaller screens */
+    margin: 10px 0; /* Vertical margin */
+    box-shadow: none; /* Remove shadow for simpler design */
+}
+
+.product-image {
+    width: 100%; /* Maintain full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.brand-name, .product-name, .price {
+    text-align: center; /* Center text for smaller screens */
+}
+
+.cart {
+    bottom: 20px; /* Adjust cart icon position */
+    }
+#banner {
+    height: 30vh; /* Adjust height for smaller screens */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+#banner h4 {
+    font-size: 14px; /* Smaller font size */
+}
+
+#banner h2 {
+    font-size: 22px; /* Smaller font size */
+}
+
+#banner button {
+    padding: 10px 20px; /* Adjust button padding */
+    font-size: 14px; /* Adjust font size */
+    }
+#banner1 {
+    flex-direction: column; /* Stack the banners vertically */
+    align-items: center; /* Center items */
+}
+
+#banner1 .stocks, 
+#banner1 .stocks22 {
+    min-width: 100%; /* Full width for small screens */
+    margin: 10px 0; /* Vertical margin for spacing */
+    padding: 20px; /* Adjust padding */
+    height: auto; /* Allow height to adjust based on content */
+}
+
+#banner1 h4 {
+    font-size: 16px; /* Smaller font size */
+}
+
+#banner1 h2 {
+    font-size: 24px; /* Smaller font size */
+}
+
+#banner1 span {
+    font-size: 12px; /* Smaller font size */
+}
+
+#banner1 button {
+    padding: 10px 15px; /* Adjust button padding */
+    font-size: 14px; /* Adjust button font size */
+    }
+#banner2 {
+    flex-direction: column; /* Stack banners vertically */
+    padding: 0 10px; /* Reduce padding for smaller screens */
+}
+
+#banner2 .sale,
+#banner2 .sale1,
+#banner2 .sale2 {
+    min-width: 100%; /* Full width for small screens */
+    height: auto; /* Allow height to adjust based on content */
+    margin-bottom: 10px; /* Adjust margin for better spacing */
+    padding: 15px; /* Adjust padding */
+}
+
+#banner2 h4 {
+    font-size: 18px; /* Smaller font size */
+}
+
+#banner2 p {
+    font-size: 14px; /* Smaller font size */
+    }
+#news {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px; /* Reduce padding */
+    align-items: flex-start; /* Align items to the start */
+}
+
+#news .newstext {
+    padding-left: 0; /* Remove left padding */
+    width: 100%; /* Full width */
+    margin-bottom: 20px; /* Space between text and input */
+}
+
+#news .newstext h4 {
+    font-size: 18px; /* Smaller font size */
+    padding-left: 0; /* Remove left padding */
+}
+
+#news .newstext p {
+    padding-left: 0; /* Remove left padding */
+    font-size: 14px; /* Smaller font size */
+}
+
+#news .sign {
+    width: 100%; /* Full width for input and button */
+    flex-direction: column; /* Stack input and button */
+}
+
+#news input {
+    width: 100%; /* Full width */
+    margin-bottom: 10px; /* Space between input and button */
+}
+
+#news button {
+    width: 100%; /* Full width */
+    }
+#page-header {
+    height: auto; /* Allow height to adjust based on content */
+    padding: 20px; /* Increase padding for better spacing */
+}
+
+#page-header h2 {
+    font-size: 24px; /* Smaller font size for headings */
+}
+
+#page-header p {
+    font-size: 16px; /* Smaller font size for paragraphs */
+    }
+.blog-section {
+    padding: 0 10px; /* Add padding for better spacing */
+}
+
+h1 {
+    font-size: 28px; /* Smaller heading size */
+}
+
+.blog-post {
+    flex-direction: column; /* Stack elements vertically */
+    margin-bottom: 20px; /* Reduced margin */
+}
+
+.blog-post img {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.blog-content {
+    padding: 15px; /* Adjust padding for smaller screens */
+}
+
+.blog-content h2 {
+    font-size: 20px; /* Smaller heading size */
+}
+
+.blog-content p {
+    font-size: 14px; /* Smaller paragraph size */
+}
+
+.blog-content a {
+    padding: 8px 15px; /* Smaller button padding */
+    font-size: 14px; /* Smaller button font size */
+    }
+
+#cart-add {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items */
+}
+
+#coupon, #subtotal {
+    width: 100%; /* Full width on smaller screens */
+    margin: 0; /* Remove margin */
+}
+
+#coupon input {
+    width: 80%; /* Increase input width */
+    margin-right: 0; /* Remove margin on small screens */
+    margin-bottom: 10px; /* Add some space below input */
+}
+
+#coupon button,
+#subtotal button {
+    width: 100%; /* Full width for buttons */
+    padding: 12px 0; /* Adjust padding */
+}
+
+#subtotal {
+    padding: 20px; /* Reduce padding */
+}
+
+#subtotal table td {
+    font-size: 12px; /* Reduce font size for better fit */
+    }
+
+}
+
